@@ -1,7 +1,10 @@
 import Head from 'next/head';
 
-import { Htag } from '../components';
-import { Button } from '../components';
+import { 
+	Button, 
+	Htag, 
+	Paragraph 
+} from '../components';
 
 const Home = () => {
 	return (
@@ -21,6 +24,15 @@ const Home = () => {
 			<Button appearance='ghost' arrow='down'>
 				Button
 			</Button>
+			<Paragraph size='s'>
+				Small text
+			</Paragraph>
+			<Paragraph size='m'>
+				Medium text
+			</Paragraph>
+			<Paragraph size='l'>
+				Large text
+			</Paragraph>
 		</>
 	);
 };
