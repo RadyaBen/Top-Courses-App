@@ -1,9 +1,10 @@
 import Head from 'next/head';
 
-import { 
-	Button, 
-	Htag, 
-	Paragraph 
+import {
+	Button,
+	Htag,
+	Paragraph,
+	Tag
 } from '../components';
 
 const Home = () => {
@@ -33,6 +34,18 @@ const Home = () => {
 			<Paragraph size='l'>
 				Large text
 			</Paragraph>
+			<Tag size='s'>
+				Ghost
+			</Tag>
+			<Tag size='s' color='red'>
+				Red
+			</Tag>
+			<Tag size='m' color='green'>
+				Green
+			</Tag>
+			<Tag color='primary'>
+				Primary
+			</Tag>
 		</>
 	);
 };
