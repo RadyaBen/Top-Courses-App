@@ -1,13 +1,17 @@
+import { useState } from 'react';
 import Head from 'next/head';
 
 import {
 	Button,
 	Htag,
 	Paragraph,
+	Rating,
 	Tag
 } from '../components';
 
 const Home = () => {
+	const [rating, setRating] = useState<number>(4);
+
 	return (
 		<>
 			<Head>
@@ -46,6 +50,11 @@ const Home = () => {
 			<Tag color='primary'>
 				Primary
 			</Tag>
+			<Rating
+				rating={rating}
+				isEditable
+				setRating={setRating}
+			/>
 		</>
 	);
 };
